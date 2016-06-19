@@ -7,6 +7,6 @@
 	//加载初始化类
 	require_once './Core/Application.class.php';
 
-	//对系统进行初始化 啊啊啊啊啊
+	//对系统进行初始化 啊啊
 	Application::run();
 ?>
