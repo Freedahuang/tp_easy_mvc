@@ -7,6 +7,6 @@
 	//加载初始化类
 	require_once './Core/Application.class.php';
 
-	//对系统进行初始化 提交到暂存区了
+	//对系统进行初始化 提交到暂存区了 本地仓库
 	Application::run();
 ?>
