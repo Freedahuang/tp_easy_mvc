@@ -7,10 +7,6 @@
 	//加载初始化类
 	require_once './Core/Application.class.php';
 
-<<<<<<< HEAD
-	//对系统进行初始化 master分支
-=======
-	//对系统进行初始化 dev分支
->>>>>>> dev
+	//对系统进行初始化
 	Application::run();
 ?>
