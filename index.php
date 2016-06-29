@@ -8,7 +8,7 @@
 	require_once './Core/Application.class.php';
 
 
-	//对系统进行初始化  test分支 push
+	//对系统进行初始化
 
 	Application::run();
 ?>
