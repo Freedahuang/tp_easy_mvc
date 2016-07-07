@@ -11,4 +11,6 @@
 	//对系统进行初始化
 
 	Application::run();
+	
+	//git测试
 ?>
