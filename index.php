@@ -1,14 +1,14 @@
-﻿<?php
-	//项目入口
+<?php
+	//椤圭洰鍏ュ彛
 
-	//为了能保证用户是从这index.php这个入口进去的，一般会在这个入口增加一个常量，
+	//涓轰簡鑳戒繚璇佺敤鎴锋槸浠庤繖index.php杩欎釜鍏ュ彛杩涘幓鐨勶紝涓�鑸細鍦ㄨ繖涓叆鍙ｅ鍔犱竴涓父閲忥紝
 	define('ACCESS', true);
 
-	//加载初始化类
+	//鍔犺浇鍒濆鍖栫被
 	require_once './Core/Application.class.php';
 
 
-	//对系统进行初始化
+	//瀵圭郴缁熻繘琛屽垵濮嬪寲
 
 	Application::run();
 	
