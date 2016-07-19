@@ -12,7 +12,5 @@
 	//对系统进行初始化
 	
 	Application::run();
-
-	//gitgg
 	
 ?>
