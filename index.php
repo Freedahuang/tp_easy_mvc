@@ -9,7 +9,7 @@
 	
 	require_once './Core/Application.class.php';
 	
-	//对系统进行初始化对系统进行初始化对系统进行初始化对系统进行初始化
+	//对系统进行初始化 fohai
 	
 	Application::run();
 	
