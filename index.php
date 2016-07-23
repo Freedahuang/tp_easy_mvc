@@ -10,7 +10,9 @@
 	require_once './Core/Application.class.php';
 	
 	//对系统进行12化
-	
+
 	Application::run();
+
+	//这是增加的代码区域
 	
 ?>
