@@ -1,34 +1,3 @@
-①这个框架的使用问题，所有的类名都不能有重复的，因为  new 类名()时，自动加载先碰到哪个类，就加载哪个类，有可能加载错误。
-解决方法，在类名中加入所在文件夹的名字（或者一个标志），比如Admin模块，
-userAdminController.class.php。这样太麻烦，而且名字太臃肿，暂时不做了，有空再想想有什么好的方法解决
-
-②在这个框架中，有两个地方可以放置模板文件，Admin、Home、Common里面的View文件夹
-控制器里面的每个方法对应一个模板
-访问Admin和Home里面的模板时是这样的   display("模块名/控制器名/方法名");
-display("Home/Index/index")
-访问公共模板时，位于Common文件夹中，这样访问   display("Common/模板名");
-display("Common/redirect")
-
-③调用assign()时，应该注意模板中的替换变量的名字应该和assign的第一个参数一样，
-并且第一个参数是用单引号引起来，因为替换模板的位置和值是根据assign的参数确定的，双引号会解析成变量
-单引号不会，是作为字符串传递的，这个忘了回看代码就知道了
-
-比如模板中是{$msg}，那么调用如下。
-$this->view->assign('{$msg}',$msg);
-
-
-④protected function redirect($url,$msg,$time = 2)，其中$url中，除了带参数m,c,a之外，不能带其他参数，若是以斜杠/分开的模式（pathinfo模式，tp的叫法），那么就是index.php/模块名/控制器名/方法名
-其实通过入口index.php访问方法的，我都不接收除了m,c,a之外的参数，不管是哪种模式
-
-⑤通过入口index.php访问时，可以写模块名字，也可以不写。传统模式和pathinfo模式都是一样的
-比如：http://localhost/ecshop/index.php/c/Index/a/index
-http://localhost/ecshop/index.php/Index/index
-如果传递的参数个数不对，或者不是m/c/a，就不接受，pathinfo模式，错误时是控制器和方法不存在（使用框架的人肯定知道怎么输入，而正常的用户只要知道怎么在第一次输入访问首页就行了）
-
-⑥通过入口index.php访问，
-可以写模块名字，也可以不写。传统模式和pathinfo模式都是一样的，这样就有了4中从入口访问项目的方法，
-还有一种就是模块，控制器，方法都缺省的方式。http://localhost/ecshop/index.php
-走默认方法
 
 ⑦strpos(),好几个地方用到了
 				//strpos返回值
