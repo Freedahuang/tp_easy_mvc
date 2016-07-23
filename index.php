@@ -5,7 +5,7 @@
 	
 	define('ACCESS', true);
 	
-	//加载初始化类
+	//加载初
 	
 	require_once './Core/Application.class.php';
 	
